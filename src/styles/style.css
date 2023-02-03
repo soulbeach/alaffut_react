@@ -587,4 +587,12 @@ h5.card-title{
       border: none !important;
     }
 
+    /*Admin*/
+
+    button.navigAdmin{
+      color: #0d0d0d;
+    }
+
+    
+
     

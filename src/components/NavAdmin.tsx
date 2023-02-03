@@ -18,17 +18,27 @@ function NavAdmin() {
               </button>
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Commerce
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="./listecommerce.html">Liste des commerces</a></li>
-                      <li><a className="dropdown-item" href="./ajoutcommerce.html">Ajouter un commerce</a></li>
-                      <li><a className="dropdown-item" href="./modifcommerce.html">Modifier un commerce</a></li>
-                      <li><a className="dropdown-item" href="./supprimercommerce.html">Supprimer un commerce</a></li>
-                    </ul>
-                  </li>
+                <Dropdown>
+
+<Dropdown.Toggle className="dropdown navigAdmin" >
+    Commerce
+</Dropdown.Toggle>
+<Dropdown.Menu>
+    <Dropdown.Item href="./listecommerce">
+    Liste des commerces
+    </Dropdown.Item>
+    <hr className="dropdown-divider" />
+    <Dropdown.Item href="./ajoutercommerce">
+    Ajouter un commerce
+    </Dropdown.Item>
+    <hr className="dropdown-divider" />
+    <Dropdown.Item href="./modifiercommerce">
+    Modifier un commerce
+    </Dropdown.Item>
+</Dropdown.Menu>
+
+</Dropdown>
+                  
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Evenements

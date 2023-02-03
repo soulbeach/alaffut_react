@@ -31,8 +31,8 @@ function AjoutCommerce() {
                     <input type="text" className="htmlForm-control" id="ville" placeholder="Entrez l'url du site" aria-describedby="emailHelp"/>
                 </div>
                    <div className="mb-3">
-                    <label htmlFor="image" className="htmlForm-label">Image !!!!A REVOIR POUR AJOUTER UNE IMAGE EN PIECE JOINTE!!! </label>
-                    <input type="image" className="htmlForm-control" id="image" aria-describedby="emailHelp"/>
+                    <label htmlFor="image" className="htmlForm-label">Image</label>
+                    <input type="file" className="form-control" id="image" aria-describedby="emailHelp"/>
                 </div>
                 <div className="htmlForm-group">
                     <label htmlFor="descriptif">Descriptif</label>
