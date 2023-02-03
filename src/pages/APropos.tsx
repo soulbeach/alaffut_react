@@ -8,7 +8,7 @@ function APropos(){
         <h1>A propos</h1>
     <main>
         <section className="container a_propos">
-            <div>
+            <div className="a_propos">
                 <h3 className="texte-descriptif"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia
                     natus sit ratione officiis unde ab
                     assumenda dolorem eius voluptas. Quo illo nemo ipsum sint eveniet quod? Similique, vel

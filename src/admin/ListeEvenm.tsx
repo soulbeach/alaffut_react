@@ -5,9 +5,9 @@ import { Button } from 'react-bootstrap';
 
 
 
-function ListeCommerce() {
+function ListeEvenements() {
     return (
-        <main id="ListeCommerce"> 
+        <main id="ListeEvenements"> 
         <NavAdmin/>
         <main>
 
@@ -53,12 +53,12 @@ function ListeCommerce() {
 
      
             <div className="boutons-admin">
-            <Button type="button" className="btn btn-outline-primary" href='./ajoutercommerce'>Ajouter un commerce</Button>
-            <Button type="button" className="btn btn-outline-primary" href='./modifiercommerce'>Modifier un commerce</Button>
-            <Button type="button" className="btn btn-outline-primary" href='./supcommerce'>Supprimer un commerce</Button>
+            <Button type="button" className="btn btn-outline-primary" href='./ajouterevenement'>Ajouter un évènement</Button>
+            <Button type="button" className="btn btn-outline-primary" href='./modifierévènement'>Modifier un évènement</Button>
+            <Button type="button" className="btn btn-outline-primary" href='./supévènement'>Supprimer un évènement</Button>
             </div>
         </main>
         </main>
     )
 }
-export default ListeCommerce;
+export default ListeEvenements;

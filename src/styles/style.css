@@ -186,7 +186,7 @@ p.card-text,
 td,
 td.col1-tab,
 h3,
-.btn-color,.mentions-legales,.dropdown-item,.nav-link,h5 {
+.btn-color,.mentions-legales,.dropdown-item,.nav-link,h5,button.dropdown{
 
     font-family: 'Roboto', sans-serif;
 }
@@ -239,7 +239,6 @@ h3,
     font-family: 'Roboto', sans-serif;
   }
 
-  
 
 
 /* PARTIE A PROPOS*/
@@ -247,14 +246,16 @@ h3,
   
  img.logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 90px;
+    margin: 90px auto;
     width: 60%;
 }
 
 img.a_propos{
     margin-top: 80px;
+}
+
+div.a_propos{
+background-color:#f8cbdf85;
 }
 
 
@@ -305,7 +306,7 @@ img.logo-contact{
 font-weight:600;
 padding: 80px 0;
 font-size: 7vw !important;
-
+background-color: #ffffff99;
 
 }
 
@@ -410,9 +411,12 @@ h5.card-title{
 
   }
   
-  .btn-carousel {
+  button.btn-carousel {
     margin: 20px 0;
+    background-color: #146E65;
+    color: #ffffff;
   }
+
   
   .custom-carousel .img-fluid {
     width: unset !important;
@@ -540,20 +544,19 @@ h5.card-title{
     margin: 100px 0;
   }
   
-  
-  span.fleche-right:hover,
-  span.fleche-left:hover {
-    scale: 1.1;
+  .carousel-control-prev-icon{
+    background-image: url("/public/images/Vectorflecheleft.png") !important;
+  }
+  .carousel-control-next-icon{
+    background-image: url("/public/images/Vectorfleche.png") !important;
   }
   
-  
-  
-  div.carousel-indicators>.btn-slide {
+  .carousel-indicators {
     border-radius: 50%;
     margin: 0 20px;
     width: 15px;
     height: 15px;
-    background-color: #146E65;
+    background-color: none !important;
   }
   
   .boite-card {
@@ -563,6 +566,7 @@ h5.card-title{
   div.d-flex {
     justify-content: center !important;
   }
+
   button.btn-vert:hover{
   background-color: #69C3C6;
   border-color: #69C3C6;
@@ -587,12 +591,35 @@ h5.card-title{
       border: none !important;
     }
 
+    a.navig{
+      color: #ffffff;
+    }
+    a.navig:hover,button.dropdown:hover{
+      color:#FDCC1E !important;
+    }
+    
+
     /*Admin*/
 
-    button.navigAdmin{
+    button.navigAdmin, a.navigAdmin{
+      color: #0d0d0d;
+      text-decoration: none;
+    }
+
+    button.navigAdmin:hover, a.navigAdmin:hover{
+      font-weight: bold;
       color: #0d0d0d;
     }
 
+    .boutons-admin{
+      display: flex;
+      flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    }
+    .boutons-admin>button,.boutons-admin>a {
+     color: #ffffff !important;
     
+    }
 
     

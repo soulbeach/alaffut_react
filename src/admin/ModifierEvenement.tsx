@@ -1,11 +1,13 @@
 import '../styles/style.css';
 import '../styles/bootstrap.css';
+import NavAdmin from '../components/NavAdmin';
 
 
 
 function ModifierEvenement() {
     return (
         <main id="ModifierEvenement">
+             <NavAdmin/>
         <section className="container">
             <form>
                 <div className="mb-3">

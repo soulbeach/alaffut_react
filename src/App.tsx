@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import logo from './images/logos/logoBallon.png';
 import Accueil from './pages/Accueil';
@@ -19,6 +19,10 @@ import AjoutCommerce from './admin/AjoutCommerce';
 import AjoutEvenements from './admin/AjoutEvenemen';
 import ModifierCommerce from './admin/ModifierCommerce';
 import ModifierEvenement from './admin/ModifierEvenement';
+import ListeCommerce from './admin/ListeCommerce';
+import ListeEvenements from './admin/ListeEvenm';
+import SupprimerCommerce from './admin/SupprimerCommerce';
+import SupprimerEvenement from './admin/SupprimerEvenement';
 
 function App() {
   return (
@@ -39,9 +43,13 @@ function App() {
 
         <Route path="/admin" element={<AdminLogin/>} />
         <Route path="/ajoutercommerce" element={<AjoutCommerce/>} />
-        <Route path="/ajouterevenement" element={<AjoutEvenements/>} />
+        <Route path="/listecommerce" element={<ListeCommerce/>} />
         <Route path="/modifiercommerce" element={<ModifierCommerce/>} />
+        <Route path="/supcommerce" element={<SupprimerCommerce/>} />
+        <Route path="/ajouterevenement" element={<AjoutEvenements/>} />
+        <Route path="/listeevenements" element={<ListeEvenements/>} />
         <Route path="/modifierevenement" element={<ModifierEvenement/>} />
+        <Route path="/supevenement" element={<SupprimerEvenement/>} />
         
 
     </Routes>

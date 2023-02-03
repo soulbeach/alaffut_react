@@ -9,6 +9,7 @@ function AdminLogin() {
         <main id="AdminLogin">
         <NavAdmin/>
          <h1>Bienvenue sur la page administrateur</h1> 
+         
     </main>
     )
 }

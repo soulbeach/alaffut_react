@@ -8,7 +8,7 @@ function Restaurants() {
         <main id="Restaurants">
             <section className="p-3 p-md-5  imgBanniere"
              style={{ backgroundImage: "url(./images/imagescategorie/brooke-lark-HlNcigvUi4Q-unsplash.jpg)",
-             backgroundRepeat: 'no-repeat', backgroundSize: 'cover'
+             backgroundRepeat: 'no-repeat', backgroundSize: 'cover',
              
    }}>
 

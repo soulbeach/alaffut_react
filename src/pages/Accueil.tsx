@@ -1,54 +1,48 @@
 
 import '../styles/style.css';
 import '../styles/bootstrap.css';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 function Accueil(){
     return(
         <div id="Accueil">
         <main>
-        <div id="carouselExampleCaptions" className="carousel slide accueil_carousel" data-bs-ride="false">
-            <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                    className="active btn-slide" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className="btn-slide"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" className="btn-slide"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div className="carousel-inner">
-                <div className="carousel-item active">
-                    <img src="./images/images/eliott-reyna-jCEpN62oWL4-unsplash.png" className="d-block w-100" alt="etudiants"/>
-                    <div className="carousel-caption d-none d-md-block">
+        <Carousel>
+      <Carousel.Item>
+        
+        <img
+          className="d-block w-100"
+          src="./images/images/eliott-reyna-jCEpN62oWL4-unsplash.png"
+          alt="First slide"
+        />
+        
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="./images/images/concert.png"
+          alt="Second slide"
+        />
 
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="./images/images/concert.png" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption d-none d-md-block">
+       
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="./images/images/bonsPlans.png" 
+          alt="Third slide"
+          />
 
-                    </div>
-                </div>
-                <div className="carousel-item">
-                    <img src="./images/images/bonsPlans.png" className="d-block w-100" alt="..."/>
-                    <div className="carousel-caption d-none d-md-block">
-                        <button className="btn btn-carousel btn-outline-success search-button" type="submit"><a
-                                className="nav-link" href="./lifeStyle.html">Aller voir les offres!</a></button>
-
-                    </div>
-                </div>
-            </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span className="fleche-left carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-            </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span className="fleche-right carousel-control-next-icon" aria-hidden="true" style={{backgroundImage: `url("./images/images/Vectorfleche.png)`}}/>
-                <span className="visually-hidden">Next</span>
-            </button>
-        </div>
+          <Carousel.Caption>
+            
+          <button className="btn btn-carousel btn-outline-success " type="submit"><a
+             className="nav-link" href="./lifeStyle">Aller voir les offres!</a></button>
+          </Carousel.Caption>
+       
+      </Carousel.Item>
+    </Carousel>
+       
     </main>
 
     <main className="container">
