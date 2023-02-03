@@ -1,0 +1,126 @@
+
+.form-connexion {
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #104E82 80%);
+    background-image: linear-gradient(to top, #a8edea 0%, #104E82 80%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: .95;
+    min-height: 500px;
+    border-radius: 5px;
+    margin: 10% auto 10%;
+    box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+    padding: 5%;
+  
+}
+
+.sectionFormulaire>header {
+    margin: 50% auto;
+    text-align: center;
+}
+
+.sectionFormulaire>header h2 {
+    font-size:2vw;
+
+    color: #3e403f;
+}
+
+.sectionFormulaire>header p {
+    letter-spacing: 0.05em;
+}
+
+
+.input-item {
+    background: #fff;
+    color: #333;
+    padding: 14.5px 0px 15px 9px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.input-item-right {
+    background: #fff;
+    color: #333;
+    padding: 15px 5px 15px 4px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}
+
+
+.inscription input[class~="form-input"] {
+    width: 100%;
+    margin-bottom: 6%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    transition: 0.2s linear;
+}
+
+.inscription button {
+    display: inline-block;
+    color: #252537;
+
+    width: 280px;
+    height: 50px;
+
+    padding: 0 20px;
+    background: #fff;
+    border-radius: 5px;
+
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+}
+
+/* Submits */
+.submits {
+    width: 48%;
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+}
+
+/*       Forgot Password button FAF3DD  */
+.frgt-pass {
+    background: transparent;
+}
+
+/*     Sign Up button  */
+.sign-up {
+    background: #B8F2E6;
+}
+
+
+/* buttons hover */
+.inscription button:hover {
+    transform: translatey(3px);
+    box-shadow: none;
+}
+
+/* buttons hover Animation */
+.inscription button:hover {
+    animation: ani9 0.4s ease-in-out infinite alternate;
+}
+
+.inscriptionViaPageConnexion{
+    display: block;
+    text-align: center;
+    background-color: red;
+}
+
+.register-from-signup{
+float:right;
+} 
+
+.forgot-password{
+float: left;
+}
+
